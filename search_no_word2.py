@@ -70,9 +70,9 @@ for file_name in file_list:
                     word_info[noun]['count'] += 1
                     word_info[noun]['locations'].append((file_name, current_chapter))
 
-# '질병'이 등장한 챕터를 찾습니다.
-if '질병' in word_info:
-    word_chapters = set([loc[1] for loc in word_info['질병']['locations']])
+# '해설'이 등장한 챕터를 찾습니다.
+if '해설' in word_info:
+    word_chapters = set([loc[1] for loc in word_info['해설']['locations']])
 else:
     word_chapters = set()
 
@@ -82,27 +82,27 @@ for data in word_info.values():
     for loc in data['locations']:
         all_chapters.add(loc[1])
 
-# '질병'이 포함되지 않은 챕터를 찾습니다.
+# '해설'이 포함되지 않은 챕터를 찾습니다.
 chapters_without_word = all_chapters - word_chapters
 
 # 결과를 출력합니다.
 if chapters_without_word:
-    print("다음 챕터에 '질병'이 포함되지 않았습니다:")
+    print("다음 챕터에 '해설'이 포함되지 않았습니다:")
     for chapter in sorted(chapters_without_word):
         files_with_missing_word = set([loc[0] for data in word_info.values() for loc in data['locations'] if loc[1] == chapter])
         for file_name in files_with_missing_word:
             print(f"챕터: {chapter}, 파일: {file_name}")
 else:
-    print("'질병'이 모든 챕터에 포함되어 있습니다.")
+    print("'해설'이 모든 챕터에 포함되어 있습니다.")
 
-# '질병'이 포함되지 않은 챕터를 파일에 저장
-with open('jikji_missing_질병.txt', 'w', encoding='utf-8') as result_file:
+# '해설'이 포함되지 않은 챕터를 파일에 저장
+with open('jikji_missing_해설.txt', 'w', encoding='utf-8') as result_file:
     if chapters_without_word:
         for chapter in sorted(chapters_without_word):
             files_with_missing_word = set([loc[0] for data in word_info.values() for loc in data['locations'] if loc[1] == chapter])
             for file_name in files_with_missing_word:
                 result_file.write(f"챕터: {chapter}, 파일: {file_name}\n")
     else:
-        result_file.write("'질병'이 모든 챕터에 포함되어 있습니다.\n")
+        result_file.write("'해설'이 모든 챕터에 포함되어 있습니다.\n")
 
-print("'질병'이 포함되지 않은 챕터와 파일 정보가 jikji_missing_질병.txt 파일에 저장되었습니다.")
+print("'해설'이 포함되지 않은 챕터와 파일 정보가 jikji_missing_해설.txt 파일에 저장되었습니다.")
