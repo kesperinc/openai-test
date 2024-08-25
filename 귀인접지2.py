@@ -34,8 +34,8 @@ def get_user_input():
 
     # 사용자가 연, 월, 일, 시를 입력하는 형식
     user_input = input("연월일시를 입력하세요" + "\n" +
-                       "예: 갑진년 임신월 사장 신유일 진시" + "\n" +
-                       "예: 갑진년 임신월 유장 경신일 진시").strip()
+                       "예: 갑진년 임신월 사장 신유일 진시 " + "\n" +
+                       "예: 갑진년 임신월 사장 경신일 술시 ").strip()
 
     # 입력된 문자열을 공백으로 분리하여 각 요소 추출
     parts = user_input.split()
@@ -114,7 +114,7 @@ def create_tianjiang_sequence(start_noble_zhi, month_zang_sequence):
     arranged_tianjiang = []
 
     for i in range(12):
-        pos_index = (i + start_index) % 12
+        pos_index = (i - start_index) % 12
         arranged_tianjiang.append(tianjiang_list[pos_index])
     print('천장 배열 = ', arranged_tianjiang)
     return arranged_tianjiang
