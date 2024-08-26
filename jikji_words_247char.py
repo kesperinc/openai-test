@@ -101,10 +101,19 @@ with open('jikji_4char.txt', 'w', encoding='utf-8') as result_4char_file:
     result_4char_file.write('\n'.join(sorted_nouns_4char))
 
 # 7글자 이상의 한자를 jikji_7char_hanja.txt 파일에 저장
+with open('jikji_7char_hanja_long.txt', 'w', encoding='utf-8') as result_7char_hanja_file:
+    for hanja, info in sorted_hanja_7char:
+        chapters = ', '.join(sorted(info['chapters']))
+        result_7char_hanja_file.write(f"{hanja}: {info['count']}회 등장\n")
+#        result_7char_hanja_file.write(f"{hanja}: {info['count']}회 등장, 간지 국수: {chapters}\n")
+
+# 7글자 이상의 한자를 jikji_7char_hanja.txt 파일에 저장
 with open('jikji_7char_hanja.txt', 'w', encoding='utf-8') as result_7char_hanja_file:
     for hanja, info in sorted_hanja_7char:
         chapters = ', '.join(sorted(info['chapters']))
-        result_7char_hanja_file.write(f"{hanja}: {info['count']}회 등장, 간지 국수: {chapters}\n")
+        result_7char_hanja_file.write(f"{hanja}\n")
+
+
 
 print("모든 파일에서 중복되지 않는 2글자 이상의 명사는 jikji_2char.txt에 저장되었습니다.")
 print("모든 파일에서 중복되지 않는 4글자 이상의 명사는 jikji_4char.txt에 저장되었습니다.")
