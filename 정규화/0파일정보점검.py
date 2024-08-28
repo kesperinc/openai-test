@@ -3,8 +3,8 @@ import re
 # 처리할 파일들의 리스트
 file_list = ['1gapja.txt', '2gapsul.txt', '3gapsin.txt', '4gapo.txt', '5gapjin.txt', '6gapin.txt']
 
-# 챕터 패턴: 간지+일 제X국 형태를 매칭
-chapter_pattern = re.compile(r'([甲乙丙丁戊己庚辛壬癸][子丑寅卯辰巳午未申酉戌亥]日)\s第([一二三四五六七八九十百千]+)局')
+# 강화된 챕터 패턴: 간지+일 제X국 형태를 매칭 (공백을 허용하고 공백이 없더라도 매칭)
+chapter_pattern = re.compile(r'([甲乙丙丁戊己庚辛壬癸][子丑寅卯辰巳午未申酉戌亥]日)\s*第\s*([一二三四五六七八九十百千]+)\s*局')
 
 # 결과를 저장할 파일
 with open('chapter_list.txt', 'w', encoding='utf-8') as output_file:
@@ -30,13 +30,23 @@ with open('chapter_list.txt', 'w', encoding='utf-8') as output_file:
             for i, guk in enumerate(guks, start=1):
                 output_file.write(f"    제{i}국: {ganji} 第{guk}局\n")
 
-                # 정유일 챕터가 발견되면 화면에 출력
-                if ganji == "丁酉日":
-                    print(f"파일명: {file_name} - 제{i}국: {ganji} 第{guk}局")
-
             # 간지별로 12개의 챕터가 있는지 확인
             if len(guks) != 12:
                 output_file.write(f"    [경고] {ganji}에 포함된 챕터 수가 {len(guks)}개입니다. (12개가 아님)\n")
+                if ganji == '丁酉日':  # 정유일 챕터에 대한 디버깅 메시지
+                    print(f"정유일 챕터 검출: {guks}")
+                    if '六' not in guks:
+                        print(f"정유일에서 '第六局'이 누락되었습니다. 파일: {file_name}")
         output_file.write("\n")  # 각 파일의 결과를 구분하기 위해 줄바꿈 추가
 
 print("모든 파일의 챕터 정보가 chapter_list.txt 파일에 저장되었습니다.")
+
+file_list = ['1gapja.txt', '2gapsul.txt', '3gapsin.txt', '4gapo.txt', '5gapjin.txt', '6gapin.txt']
+file_name = '4gapo.txt'
+with open(file_name, 'r', encoding='utf-8') as file:
+    content = file.read()
+    if '丁酉日 第六局' in content:
+        print(f"'丁酉日 第六局' 직접 검색에서 발견됨. 파일: {file_name}")
+    else:
+        print(f"'丁酉日 第六局' 직접 검색에서 누락됨. 파일: {file_name}")
+
