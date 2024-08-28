@@ -30,6 +30,14 @@ with open('chapter_list.txt', 'w', encoding='utf-8') as output_file:
             for i, guk in enumerate(guks, start=1):
                 output_file.write(f"    제{i}국: {ganji} 第{guk}局\n")
 
+                # 정유일 챕터가 발견되면 화면에 출력
+                if ganji == "丁酉日":
+                    print(f"파일명: {file_name} - 제{i}국: {ganji} 第{guk}局")
+
+                # 정유일 챕터가 발견되면 화면에 출력
+                if i == 6:
+                    print(f"파일명: {file_name} - 제{i}국: {ganji} 第{guk}局")
+
             # 간지별로 12개의 챕터가 있는지 확인
             if len(guks) != 12:
                 output_file.write(f"    [경고] {ganji}에 포함된 챕터 수가 {len(guks)}개입니다. (12개가 아님)\n")
