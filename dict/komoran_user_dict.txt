@@ -435,7 +435,7 @@
 줄	NNP
 천의	NNP
 간의	NNP
-기격	NNP
+기괘	NNP
 계년	NNP
 체양	NNP
 상문	NNP
@@ -667,7 +667,6 @@
 변재	NNP
 제과	NNP
 상덕	NNP
-간시	NNP
 공절	NNP
 진연	NNP
 충구	NNP
@@ -1003,7 +1002,6 @@
 현탈	NNP
 시둔	NNP
 호형	NNP
-목과	NNP
 적신	NNP
 음비	NNP
 위병	NNP
@@ -1127,7 +1125,6 @@
 귀왕	NNP
 병체	NNP
 독족	NNP
-기과	NNP
 건방	NNP
 작귀	NNP
 만이	NNP
@@ -1252,7 +1249,6 @@
 극충	NNP
 투묘	NNP
 호원	NNP
-기괘	NNP
 본궁	NNP
 흉회	NNP
 총융	NNP
@@ -1644,7 +1640,7 @@
 연명자	NNP
 광명정대	NNP
 간지상	NNP
-삼기격	NNP
+삼기괘	NNP
 천망사장	NNP
 진주작격	NNP
 사계년	NNP
@@ -1734,7 +1730,7 @@
 교차합재	NNP
 상하혼미	NNP
 원수괘	NNP
-곡직국	NNP
+곡직괘	NNP
 작귀격	NNP
 외호리	NNP
 탄사과	NNP
@@ -1773,7 +1769,6 @@
 소혼살	NNP
 삼년차	NNP
 갑신순	NNP
-각답공방	NNP
 교차탈	NNP
 본명상신	NNP
 끝자락	NNP
@@ -1783,7 +1778,6 @@
 관인점	NNP
 임신자	NNP
 대신격장	NNP
-곡직과	NNP
 수륙로	NNP
 반청반란	NNP
 화개복일	NNP
@@ -1806,7 +1800,6 @@
 전귀변재	NNP
 요극과	NNP
 침해과	NNP
-간시상신	NNP
 무의괘	NNP
 전후핍박	NNP
 덕상록절	NNP
@@ -1986,7 +1979,7 @@
 국경선	NNP
 합수국	NNP
 순수국	NNP
-가색과	NNP
+가색괘	NNP
 취조관	NNP
 천화괘	NNP
 사오순	NNP
@@ -2041,7 +2034,7 @@
 삼태신	NNP
 불공자	NNP
 길사점	NNP
-승헌과	NNP
+승헌괘	NNP
 덕경과	NNP
 음불비	NNP
 사묘복생	NNP
@@ -2086,14 +2079,12 @@
 교차상하	NNP
 록피현탈	NNP
 체생지신	NNP
-간강신	NNP
 전재화귀	NNP
 천올귀인	NNP
 용전과	NNP
 한열격	NNP
 구륜재작	NNP
 출가인	NNP
-견기과	NNP
 선봉문	NNP
 구축과	NNP
 상신간	NNP
@@ -2178,7 +2169,6 @@
 호가호위	NNP
 삼교형극	NNP
 행년상	NNP
-삼기과	NNP
 청룡이승	NNP
 체상극해	NNP
 십악대패	NNP
@@ -2280,7 +2270,6 @@
 관월신	NNP
 역마투묘	NNP
 오호원둔	NNP
-삼기괘	NNP
 반복무상	NNP
 재물점	NNP
 묘신복택	NNP
@@ -2409,7 +2398,6 @@
 전공격	NNP
 길신양장	NNP
 퇴직관리	NNP
-고조과	NNP
 천망과	NNP
 육정신	NNP
 반음점	NNP
@@ -2464,7 +2452,7 @@
 육임관로신서	NNP
 세월일명마	NNP
 포난불두격	NNP
-동사엄목과	NNP
+동사엄목괘	NNP
 간지상신간	NNP
 덕상록절격	NNP
 인왕기택격	NNP
