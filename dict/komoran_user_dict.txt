@@ -15,13 +15,12 @@
 육로	NNP
 옥장	NNP
 오왕	NNP
-삼전	NNP
+전이	NNP
 흉화	NNP
 호귀	NNP
 공망	NNP
 제극	NNP
 임간	NNP
-이거	NNP
 록신	NNP
 왕신	NNP
 왕록	NNP
@@ -34,6 +33,7 @@
 삼형	NNP
 빈주	NNP
 불투	NNP
+삼전	NNP
 예의	NNP
 연여	NNP
 순공	NNP
@@ -56,13 +56,13 @@
 별책	NNP
 지신	NNP
 실탈	NNP
-전이	NNP
 간상	NNP
 정단	NNP
 비나	NNP
 허모	NNP
 남아	NNP
 수고	NNP
+전은	NNP
 비병	NNP
 월장	NNP
 길성	NNP
@@ -72,6 +72,7 @@
 폐구	NNP
 은택	NNP
 파패	NNP
+빈	NNP
 입옥	NNP
 병지	NNP
 하추	NNP
@@ -153,7 +154,6 @@
 인택	NNP
 구초	NNP
 탈방	NNP
-전은	NNP
 필법	NNP
 관운	NNP
 대길	NNP
@@ -189,7 +189,9 @@
 겁살	NNP
 간전	NNP
 환혼	NNP
+서	NNP
 재효	NNP
+해도	NNP
 쇠패	NNP
 비첩	NNP
 묘고	NNP
@@ -221,7 +223,6 @@
 일묘	NNP
 함공	NNP
 재유	NNP
-여서	NNP
 가려	NNP
 천옥	NNP
 명귀	NNP
@@ -237,6 +238,7 @@
 귀덕	NNP
 관효	NNP
 태신	NNP
+전의	NNP
 복태	NNP
 쇠목	NNP
 진금	NNP
@@ -295,7 +297,6 @@
 승신	NNP
 호생	NNP
 발복	NNP
-용가	NNP
 지지	NNP
 괘상	NNP
 병증	NNP
@@ -348,11 +349,11 @@
 인입	NNP
 탈향	NNP
 묘절	NNP
-에는	NNP
 형살	NNP
 체탈	NNP
 섭해	NNP
 축위	NNP
+가고	NNP
 후일	NNP
 간객	NNP
 덕기	NNP
@@ -360,6 +361,7 @@
 목국	NNP
 타지	NNP
 사궁	NNP
+용가	NNP
 목형	NNP
 대가	NNP
 사합	NNP
@@ -375,7 +377,6 @@
 탈정	NNP
 육의	NNP
 술묘	NNP
-까지	NNP
 파교	NNP
 음합	NNP
 육음	NNP
@@ -433,6 +434,7 @@
 덕인	NNP
 줄	NNP
 천의	NNP
+간의	NNP
 기격	NNP
 계년	NNP
 체양	NNP
@@ -445,6 +447,7 @@
 휴기	NNP
 비이	NNP
 손궁	NNP
+자가	NNP
 간살	NNP
 월왕	NNP
 축궁	NNP
@@ -477,6 +480,7 @@
 봉호	NNP
 수충	NNP
 화국	NNP
+만나	NNP
 혈증	NNP
 귀래	NNP
 향병	NNP
@@ -493,6 +497,7 @@
 칠호	NNP
 칠	NNP
 원한	NNP
+여서	NNP
 필숙	NNP
 충극	NNP
 인혼	NNP
@@ -520,7 +525,6 @@
 덕위	NNP
 얼	NNP
 연월	NNP
-에만	NNP
 관지	NNP
 호묘	NNP
 응접	NNP
@@ -529,6 +533,7 @@
 휴추	NNP
 삼음	NNP
 양과	NNP
+해서	NNP
 무근	NNP
 본방	NNP
 탈도	NNP
@@ -543,7 +548,9 @@
 술괴	NNP
 천괴	NNP
 휴화	NNP
+이거	NNP
 음장	NNP
+도와	NNP
 임욕	NNP
 창과	NNP
 형옥	NNP
@@ -579,6 +586,7 @@
 옥묘	NNP
 오중	NNP
 묘문	NNP
+임한	NNP
 팔둔	NNP
 일둔	NNP
 삼둔	NNP
@@ -605,7 +613,9 @@
 소격	NNP
 간양	NNP
 증이	NNP
+향의	NNP
 산위	NNP
+주려	NNP
 오지	NNP
 입택	NNP
 곡단	NNP
@@ -616,6 +626,7 @@
 간경	NNP
 삼년	NNP
 도휴	NNP
+간이	NNP
 소혼	NNP
 식록	NNP
 공패	NNP
@@ -626,6 +637,7 @@
 폐경	NNP
 용귀	NNP
 격장	NNP
+부로	NNP
 수륙	NNP
 금병	NNP
 반청	NNP
@@ -650,6 +662,7 @@
 삼자	NNP
 신후	NNP
 천서	NNP
+하면	NNP
 교거	NNP
 변재	NNP
 제과	NNP
@@ -662,6 +675,7 @@
 거정	NNP
 록덕	NNP
 인모	NNP
+중의	NNP
 손모	NNP
 새신	NNP
 복신	NNP
@@ -671,7 +685,6 @@
 임택	NNP
 수과	NNP
 등천	NNP
-초하	NNP
 우숙	NNP
 여숙	NNP
 속풍	NNP
@@ -761,13 +774,13 @@
 중살	NNP
 종과	NNP
 태을	NNP
-만나	NNP
 형관	NNP
 공록	NNP
 금향	NNP
 쉬려	NNP
 금생	NNP
 화왕	NNP
+나서	NNP
 홀러	NNP
 과경	NNP
 정와	NNP
@@ -789,6 +802,7 @@
 재성	NNP
 축가	NNP
 묘정	NNP
+자의	NNP
 허증	NNP
 익진	NNP
 원둔	NNP
@@ -801,6 +815,7 @@
 헌인	NNP
 악녀	NNP
 월염	NNP
+치려	NNP
 토혈	NNP
 록상	NNP
 수묘	NNP
@@ -825,7 +840,6 @@
 록왕	NNP
 입고	NNP
 난격	NNP
-자가	NNP
 흉도	NNP
 무이	NNP
 흉제	NNP
@@ -854,7 +868,6 @@
 절귀	NNP
 쌍어	NNP
 본신	NNP
-이려	NNP
 삭족	NNP
 망은	NNP
 어지	NNP
@@ -879,6 +892,7 @@
 곤방	NNP
 귀류	NNP
 수루	NNP
+위에	NNP
 보담	NNP
 왕택	NNP
 연격	NNP
@@ -902,16 +916,17 @@
 성국	NNP
 리서	NNP
 천회	NNP
-간의	NNP
 흉역	NNP
+승한	NNP
 수귀	NNP
 파가	NNP
-서	NNP
+와	NNP
 일비	NNP
 금살	NNP
 음친	NNP
 친	NNP
 각숙	NNP
+집의	NNP
 관향	NNP
 병향	NNP
 일내	NNP
@@ -925,7 +940,6 @@
 처비	NNP
 양명	NNP
 음회	NNP
-전의	NNP
 덕마	NNP
 태잉	NNP
 상한	NNP
@@ -956,6 +970,7 @@
 응봉	NNP
 격명	NNP
 생재	NNP
+심이	NNP
 사패	NNP
 음처	NNP
 탈패	NNP
@@ -1017,6 +1032,7 @@
 생문	NNP
 당도	NNP
 간덕	NNP
+용은	NNP
 공극	NNP
 장태	NNP
 구록	NNP
@@ -1057,6 +1073,7 @@
 극탈	NNP
 문다	NNP
 합패	NNP
+산점	NNP
 원직	NNP
 면죄	NNP
 순재	NNP
@@ -1112,8 +1129,8 @@
 독족	NNP
 기과	NNP
 건방	NNP
-와	NNP
 작귀	NNP
+만이	NNP
 수옥	NNP
 화명	NNP
 천표	NNP
@@ -1127,6 +1144,7 @@
 독형	NNP
 규호	NNP
 마씨	NNP
+주고	NNP
 단간	NNP
 점사	NNP
 금신	NNP
@@ -1181,6 +1199,7 @@
 삼회	NNP
 세위	NNP
 사송	NNP
+와서	NNP
 길경	NNP
 축귀	NNP
 주기	NNP
@@ -1188,6 +1207,7 @@
 복덕	NNP
 난구	NNP
 첩부	NNP
+말은	NNP
 암탈	NNP
 극방	NNP
 간폐	NNP
@@ -1195,6 +1215,7 @@
 음극	NNP
 샹소	NNP
 록귀	NNP
+가면	NNP
 단약	NNP
 월수	NNP
 덕귀	NNP
@@ -1211,7 +1232,6 @@
 광과	NNP
 재공	NNP
 놀람	NNP
-오려	NNP
 역지	NNP
 파유	NNP
 삼지	NNP
@@ -1228,7 +1248,6 @@
 회춘	NNP
 발만	NNP
 택점	NNP
-서려	NNP
 좌극	NNP
 극충	NNP
 투묘	NNP
@@ -1245,6 +1264,7 @@
 과합	NNP
 주씨	NNP
 귀합	NNP
+지해	NNP
 용하	NNP
 흉과	NNP
 재묘	NNP
@@ -1317,6 +1337,7 @@
 둔극	NNP
 열증	NNP
 과로	NNP
+하려	NNP
 관마	NNP
 도계	NNP
 용맥	NNP
@@ -1337,12 +1358,16 @@
 흉독	NNP
 술옥	NNP
 섭연	NNP
+통할	NNP
+둔자	NNP
 공호	NNP
 축방	NNP
 막귀	NNP
 동량	NNP
 길리	NNP
 용합	NNP
+일이	NNP
+행이	NNP
 외음	NNP
 합택	NNP
 월덕	NNP
@@ -1357,7 +1382,6 @@
 병고	NNP
 실묘	NNP
 노야	NNP
-할	NNP
 타시	NNP
 가올	NNP
 화역	NNP
@@ -1386,6 +1410,7 @@
 비폐	NNP
 음점	NNP
 은철	NNP
+열고	NNP
 월렴	NNP
 암병	NNP
 직록	NNP
@@ -1737,7 +1762,6 @@
 고과재잠	NNP
 귀소격	NNP
 호분등명	NNP
-서북향	NNP
 새옹지마	NNP
 화복부실	NNP
 탈상봉탈	NNP
@@ -1754,6 +1778,7 @@
 본명상신	NNP
 끝자락	NNP
 재액과	NNP
+원수가	NNP
 변화무상	NNP
 관인점	NNP
 임신자	NNP
@@ -1862,6 +1887,7 @@
 하범상	NNP
 절원태격	NNP
 중전입묘	NNP
+허세일	NNP
 월염대살	NNP
 천목비렴	NNP
 정신묘신	NNP
@@ -1881,6 +1907,7 @@
 본명인	NNP
 갑술순	NNP
 발병처	NNP
+기대어	NNP
 죽는다	NNP
 관재점	NNP
 출삼양	NNP
@@ -1902,7 +1929,6 @@
 운량신	NNP
 공손성	NNP
 공파발용	NNP
-임하니	NNP
 낙저공방	NNP
 탈인제귀	NNP
 진해이과	NNP
@@ -1972,6 +1998,7 @@
 음귀인	NNP
 윤하격	NNP
 무덤간	NNP
+이지만	NNP
 추천인	NNP
 식록자	NNP
 합화국	NNP
@@ -2076,7 +2103,6 @@
 원태과	NNP
 파재자	NNP
 체생재효	NNP
-이지만	NNP
 명암이귀	NNP
 음양장	NNP
 자취난수	NNP
@@ -2166,6 +2192,7 @@
 진주작	NNP
 현무규호	NNP
 매복병	NNP
+세까지	NNP
 육의과	NNP
 사절체	NNP
 묘복가정	NNP
@@ -2314,6 +2341,7 @@
 천라과	NNP
 심혈불안	NNP
 건해산	NNP
+임하니	NNP
 영양격	NNP
 백호입묘	NNP
 무극괘	NNP

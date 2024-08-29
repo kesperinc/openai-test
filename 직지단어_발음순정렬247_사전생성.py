@@ -117,12 +117,6 @@ for file_name in file_list:
                     if current_chapter:
                         unique_nouns_5to6char[noun]['chapters'].add(current_chapter)
 
-# 명사를 등장 횟수에 따라 내림차순으로 정렬
-sorted_nouns_2char = sorted(unique_nouns_2char.items(), key=lambda x: x[1]['count'], reverse=True)
-sorted_nouns_3to4char = sorted(unique_nouns_3to4char.items(), key=lambda x: x[1]['count'], reverse=True)
-sorted_nouns_5to6char = sorted(unique_nouns_5to6char.items(), key=lambda x: x[1]['count'], reverse=True)
-sorted_hanja_7char = sorted(hanja_7char_info.items(), key=lambda x: x[1]['count'], reverse=True)
-
 # 발음에 따라 정렬하기 위한 헬퍼 함수
 def pronunciation_key(word):
     return j2hcj(h2j(word))
@@ -191,15 +185,19 @@ def save_to_file(filename, data):
             file.write(f"{noun}: {info['count']}회 등장, 간지 국수: {chapters}\n")
 
 # 2글자 이하의 명사를 저장
-save_to_file('jikji_2char.txt', sorted(sorted_nouns_2char, key=lambda x: (pronunciation_key(x[0]), x[0])))
+sorted_2char = sorted(sorted(unique_nouns_2char.items(), key=lambda x: x[1]['count'], reverse=True), key=lambda x: (pronunciation_key(x[0]), x[0]))
+save_to_file('jikji_2char.txt', sorted_2char)
 
 # 3글자 이상 4글자 이하의 명사를 저장
-save_to_file('jikji_4char.txt', sorted(sorted_nouns_3to4char, key=lambda x: (pronunciation_key(x[0]), x[0])))
+sorted_3to4char = sorted(sorted(unique_nouns_3to4char.items(), key=lambda x: x[1]['count'], reverse=True), key=lambda x: (pronunciation_key(x[0]), x[0]))
+save_to_file('jikji_4char.txt', sorted_3to4char)
 
 # 5글자와 6글자의 명사를 저장
-save_to_file('jikji_5to6char.txt', sorted(sorted_nouns_5to6char, key=lambda x: (pronunciation_key(x[0]), x[0])))
+sorted_5to6char = sorted(sorted(unique_nouns_5to6char.items(), key=lambda x: x[1]['count'], reverse=True), key=lambda x: (pronunciation_key(x[0]), x[0]))
+save_to_file('jikji_5to6char.txt', sorted_5to6char)
 
 # 7글자 이상의 한자를 저장
+sorted_hanja_7char = sorted(hanja_7char_info.items(), key=lambda x: x[1]['count'], reverse=True)
 save_to_file('jikji_7char_hanja.txt', sorted_hanja_7char)
 
 # 사용자 사전에 저장된 단어의 수를 출력
