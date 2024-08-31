@@ -1,0 +1,42 @@
+<!-- app/templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>텍스트 처리 서비스</title>
+</head>
+<body>
+    <h1>텍스트 처리 서비스</h1>
+    <button onclick="preprocess()">전처리</button>
+    <button onclick="trainWord2Vec()">훈련</button>
+    <button onclick="runInference()">추론</button>
+    
+    <script>
+        function preprocess() {
+            fetch("/preprocess", { method: "POST" })
+                .then(response => response.json())
+                .then(data => alert(data.message))
+                .catch(error => console.error('Error:', error));
+        }
+
+        function trainWord2Vec() {
+            fetch("/train/word2vec", { method: "POST" })
+                .then(response => response.json())
+                .then(data => alert(data.message))
+                .catch(error => console.error('Error:', error));
+        }
+
+        function runInference() {
+            let inputText = prompt("Enter input text for inference:");
+            fetch("/inference", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ input_text: inputText })
+            })
+            .then(response => response.json())
+            .then(data => alert("Inference result: " + JSON.stringify(data.result)))
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>
