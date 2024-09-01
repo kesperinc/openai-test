@@ -1,42 +1,40 @@
-<!-- app/templates/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>텍스트 처리 서비스</title>
+    <title>Text Processing</title>
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
-    <h1>텍스트 처리 서비스</h1>
-    <button onclick="preprocess()">전처리</button>
-    <button onclick="trainWord2Vec()">훈련</button>
-    <button onclick="runInference()">추론</button>
-    
+    <div class="container">
+        <h1>Text Processing Dashboard</h1>
+        <div class="button-container">
+            <button id="preprocessButton">텍스트 전처리</button>
+        </div>
+        <div id="result"></div>
+    </div>
+
     <script>
-        function preprocess() {
-            fetch("/preprocess", { method: "POST" })
-                .then(response => response.json())
-                .then(data => alert(data.message))
-                .catch(error => console.error('Error:', error));
-        }
+        document.getElementById('preprocessButton').addEventListener('click', async function () {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '전처리 중...';
 
-        function trainWord2Vec() {
-            fetch("/train/word2vec", { method: "POST" })
-                .then(response => response.json())
-                .then(data => alert(data.message))
-                .catch(error => console.error('Error:', error));
-        }
+            try {
+                const response = await fetch('/api/v1/preprocess', {
+                    method: 'POST'
+                });
 
-        function runInference() {
-            let inputText = prompt("Enter input text for inference:");
-            fetch("/inference", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ input_text: inputText })
-            })
-            .then(response => response.json())
-            .then(data => alert("Inference result: " + JSON.stringify(data.result)))
-            .catch(error => console.error('Error:', error));
-        }
+                if (response.ok) {
+                    const data = await response.json();
+                    resultDiv.innerHTML = data.message;
+                } else {
+                    const errorData = await response.json();
+                    resultDiv.innerHTML = `오류: ${errorData.message}`;
+                }
+            } catch (error) {
+                resultDiv.innerHTML = `오류: ${error.message}`;
+            }
+        });
     </script>
 </body>
 </html>
