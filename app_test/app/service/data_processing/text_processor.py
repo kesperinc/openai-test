@@ -1,79 +1,71 @@
 # service/data_processing/text_processor.py
 
-import re
-from konlpy.tag import Mecab, Okt, Komoran
-from collections import defaultdict
-from jamo import h2j, j2hcj
 import os
+import re
+from collections import defaultdict
 
 class TextProcessor:
     def __init__(self, file_list):
         self.file_list = file_list
-        self.mecab = Mecab()
-        self.okt = Okt()
-        self.komoran = Komoran()
-        self.unique_nouns_by_chapter = defaultdict(lambda: {
-            '2char': defaultdict(lambda: {'count': 0, 'chapters': set()}),
-            '3to4char': defaultdict(lambda: {'count': 0, 'chapters': set()}),
-            '5to6char': defaultdict(lambda: {'count': 0, 'chapters': set()}),
-            '7char': defaultdict(lambda: {'count': 0, 'chapters': set()})
-        })
-        self.mecab_user_dict = []
-        self.okt_user_dict = []
-        self.komoran_user_dict = []
-        self.mecab_existing_dict = []
-        self.okt_existing_dict = []
-        self.komoran_existing_dict = []
+        self.normalized_dir = 'data/normalized'
+        self.chapter_dir = 'data/chapters'
+        self.unique_nouns_by_chapter = defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: {'count': 0, 'chapters': set()})))
 
     def preprocess_text(self):
-        # Implementation of text preprocessing
-        pass
+        # 디렉토리가 없으면 생성
+        os.makedirs(self.normalized_dir, exist_ok=True)
+        os.makedirs(self.chapter_dir, exist_ok=True)
 
-    def _process_match(self, match, current_chapter):
-        # Implementation of match processing
-        pass
+        number_pattern = re.compile(r'[0-9①②③④⑤⑥⑦⑧⑨⑩]+')
+        hanja_hangul_pattern = re.compile(r'(\w+)\([一-龥]+\)')
+        hanja_only_pattern = re.compile(r'[一-龥]{2,}')
+        chapter_pattern = re.compile(r'([甲乙丙丁戊己庚辛壬癸][子丑寅卯辰巳午未申酉戌亥]日)\s*第[一二三四五六七八九十百千]+局')
 
-    def _process_hanja(self, match, current_chapter, exclude_list):
-        # Implementation of hanja processing
-        pass
+        for file_name in self.file_list:
+            with open(file_name, 'r', encoding='utf-8') as file:
+                content = file.read().strip()
 
-    def _process_nouns(self, nouns, current_chapter):
-        # Implementation of nouns processing
-        pass
+            # 정규화 과정
+            normalized_content = number_pattern.sub('', content)
+            normalized_content = hanja_hangul_pattern.sub('', normalized_content)
+            normalized_content = hanja_only_pattern.sub('', normalized_content)
 
-    def _create_user_dicts(self):
-        # Implementation of user dictionary creation
-        pass
+            # 정규화된 내용을 normalized 디렉토리에 저장
+            normalized_file_path = os.path.join(self.normalized_dir, os.path.basename(file_name))
+            with open(normalized_file_path, 'w', encoding='utf-8') as normalized_file:
+                normalized_file.write(normalized_content)
 
-    def _check_word_in_mecab(self, word):
-        # Implementation of word check in mecab
-        pass
+            # 각 챕터별로 텍스트 파일 생성
+            self._create_chapter_files(content, chapter_pattern, file_name)
 
-    def _check_word_in_okt(self, word):
-        # Implementation of word check in okt
-        pass
+    def _create_chapter_files(self, content, chapter_pattern, original_file_name):
+        lines = content.splitlines()
+        current_chapter = None
+        chapter_content = []
 
-    def _check_word_in_komoran(self, word):
-        # Implementation of word check in komoran
-        pass
+        for line in lines:
+            chapter_match = chapter_pattern.search(line)
+            if chapter_match:
+                if current_chapter:
+                    # 이전 챕터 내용을 저장
+                    self._save_chapter_file(current_chapter, chapter_content, original_file_name)
+                    chapter_content = []
 
-    def save_user_dicts(self):
-        # Implementation of saving user dictionaries
-        pass
+                # 새로운 챕터 시작
+                current_chapter = chapter_match.group()
 
-    def get_all_nouns(self):
-        # Implementation of getting all nouns
-        pass
+            chapter_content.append(line)
 
-    def pronunciation_key(self, word):
-        # Implementation of pronunciation key
-        pass
+        # 마지막 챕터 내용 저장
+        if current_chapter:
+            self._save_chapter_file(current_chapter, chapter_content, original_file_name)
 
-    def save_to_file(self, filename, data):
-        # Implementation of saving to file
-        pass
+    def _save_chapter_file(self, chapter, content_lines, original_file_name):
+        # 파일명/챕터명 디렉토리 생성
+        chapter_file_dir = os.path.join(self.chapter_dir, os.path.basename(original_file_name).replace('.txt', ''))
+        os.makedirs(chapter_file_dir, exist_ok=True)
 
-    def save_processed_files(self):
-        # Implementation of saving processed files
-        pass
-
+        # 챕터 내용 저장
+        chapter_file_path = os.path.join(chapter_file_dir, f"{chapter}.txt")
+        with open(chapter_file_path, 'w', encoding='utf-8') as chapter_file:
+            chapter_file.write('\n'.join(content_lines))
