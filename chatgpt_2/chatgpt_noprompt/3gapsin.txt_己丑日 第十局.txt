@@ -1,0 +1,34 @@
+From the provided text
+it's somewhat challenging to identify the nouns as the text is in a mix of Korean and Chinese. However
+from a rough translation
+these are some of the nouns I was able to extract:
+
+1. 동사엄목
+2. 진퇴
+3. 만사
+4. 고진
+5. 스님
+6. 도인
+7. 복
+8. 날씨
+9. 가택
+10. 혼인
+11. 태산
+12. 공명
+13. 구재
+14. 질병
+15. 분실
+16. 출행
+17. 행인
+18. 쟁송
+19. 출병
+20. 무덤 
+21. 겨울
+22. 뱀
+23. 일
+24. 공포
+25. 묘성
+26. 호랑이
+
+Please note
+there may be more nouns within the text that I've missed due to language barriers.

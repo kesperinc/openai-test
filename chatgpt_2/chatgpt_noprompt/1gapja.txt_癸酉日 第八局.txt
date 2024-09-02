@@ -1,0 +1,56 @@
+The nouns in the text are as follows:
+
+1. 癸酉日
+2. 第八局
+3. 課體
+4. 知一
+5. 도액
+6. 둔복
+7. 課意
+8. 재(財) 
+9. 관(官)
+10. 덕(德) 
+11. 록(祿)
+12. 수극(受剋)
+13. 인종(引從)
+14. 액(厄)
+15. 解曰
+16. 日的 
+17. 귀(鬼)
+18. 寅
+19. 임(臨)
+20. 子는 
+21. 日的 
+22. 록(祿)
+23. 未
+24. 巳는 
+25. 재(財) 
+26. 덕(德)
+27. 子에
+28. 임했다
+29. 下에 
+30. 적(賊) 
+31. 癸의 
+32. 기궁은 
+33. 丑에 
+34. 초전은 
+35. 未加寅이다
+36. 丑의 앞에서 
+37. 인(引)하고 
+38. 말전의 
+39. 巳加子는
+40. 丑의 뒤에서
+41. 종(從)
+42. 말전과 
+43. 초전의 
+44. 지반(地盤)
+45. 日의 
+46. 丑을 
+47. 인종(引從)
+48. 적(賊)의 
+49. 액(厄)
+50. 斷曰
+
+(Assistants note: This list was generated with a basic regex to identify nouns. However
+the text provided mixes several languages including Hanja and Hangul which makes it difficult to accurately extract all the nouns. Additionally
+Hanja compounds often form a single noun which was not considered in this extraction.)

@@ -1,0 +1,45 @@
+The nouns in your text are:
+
+- 壬申日
+- 第六局
+- 課體
+- 涉害
+- 도액
+- 사절
+- 課意
+- 午
+- 밀려나고
+- 밤
+- 占
+- 처재 (妻財)
+- 손실
+- 웃어른
+- 재난 (災難)
+- 형제 (兄弟)
+- 재난
+- 解曰
+- 干上
+- 발용
+- 천후
+- 밤
+- 현무
+- 午火
+- 협극 (夾剋)
+- 절지 (絶地)
+- 진현무 (眞玄武)
+- 申
+- 장생 (長生)
+- 부모 (父母)
+- 중전
+- 丑墓
+- 申의 묘 (墓)
+- 백호 (白虎)
+- 재 (災)
+- 斷曰
+- 섭해 (涉害)
+- 괘 (卦)
+- 도액 (度厄)
+- 하적상 (下賊上)
+
+This list could go even longer. Note that the extraction of nouns from a text often depends on the understanding and interpretation of the text
+especially when it comes to languages with complex grammar structures like Korean and Chinese.
