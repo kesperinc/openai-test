@@ -2071,6 +2071,7 @@
 체생지신	NNP
 전재화귀	NNP
 천올귀인	NNP
+작륜격	NNP
 용전과	NNP
 한열격	NNP
 구륜재작	NNP
