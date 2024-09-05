@@ -407,7 +407,6 @@
 해괘	NNP
 섭사	NNP
 철하	NNP
-복등	NNP
 극양	NNP
 십간	NNP
 고과	NNP
@@ -571,7 +570,6 @@
 향양	NNP
 인의	NNP
 손재	NNP
-에세	NNP
 왕금	NNP
 수일	NNP
 걸	NNP
@@ -597,7 +595,6 @@
 칠둔	NNP
 일복	NNP
 팔	NNP
-헌무	NNP
 손방	NNP
 금문	NNP
 비신	NNP
@@ -668,15 +665,12 @@
 상덕	NNP
 공절	NNP
 진연	NNP
-충구	NNP
 상록	NNP
 거정	NNP
 록덕	NNP
 인모	NNP
 중의	NNP
 손모	NNP
-새신	NNP
-복신	NNP
 실성	NNP
 혼적	NNP
 액지	NNP
@@ -709,7 +703,6 @@
 제록	NNP
 천조	NNP
 보고	NNP
-임해	NNP
 교충	NNP
 간귀	NNP
 꿀	NNP
@@ -755,6 +748,7 @@
 월숙	NNP
 상백	NNP
 공로	NNP
+복신	NNP
 병재	NNP
 내문	NNP
 살기	NNP
@@ -1041,7 +1035,6 @@
 진묘	NNP
 참고	NNP
 강격	NNP
-불김	NNP
 혈해	NNP
 염예	NNP
 입명	NNP
@@ -1248,7 +1241,7 @@
 호원	NNP
 본궁	NNP
 흉회	NNP
-총융	NNP
+은융	NNP
 진씨	NNP
 채씨	NNP
 복택	NNP
@@ -1321,7 +1314,7 @@
 해극	NNP
 처위	NNP
 술독	NNP
-색묘	NNP
+강묘	NNP
 말기	NNP
 적해	NNP
 어기	NNP
@@ -2333,7 +2326,6 @@
 무극괘	NNP
 합염상	NNP
 사묘임생	NNP
-는열증	NNP
 주작야조	NNP
 지망살	NNP
 지망격	NNP
