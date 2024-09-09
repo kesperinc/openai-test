@@ -18,3 +18,13 @@ Use config file: /opt/bareun/config/bareun.json
 2024-09-05 14:50:59.531482: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
 Use config file: /opt/bareun/config/bareun.json
 2024/09/05 14:50:59 error opening file: open /opt/bareun/var/logs/bareun.log: permission denied
+2024-09-09 15:46:39.912289: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-09-09 15:46:39.926024: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/bareun/lib
+2024-09-09 15:46:39.926224: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Use config file: /opt/bareun/config/bareun.json
+2024/09/09 15:46:40 error opening file: open /opt/bareun/var/logs/bareun.log: permission denied
+2024-09-09 15:46:45.148492: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-09-09 15:46:45.158190: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/bareun/lib
+2024-09-09 15:46:45.158248: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Use config file: /opt/bareun/config/bareun.json
+2024/09/09 15:46:45 error opening file: open /opt/bareun/var/logs/bareun.log: permission denied
