@@ -58,12 +58,12 @@ unique_nouns = sorted(set(all_nouns))
 unique_nouns_4char = sorted(set(all_nouns_4char))
 
 # 2글자 이상의 명사를 jikji.txt 파일에 저장
-with open('jikji.txt', 'w', encoding='utf-8') as result_file:
+with open('jikji_2char.txt', 'w', encoding='utf-8') as result_file:
     result_file.write('\n'.join(unique_nouns))
 
 # 4글자 이상의 명사를 jikji_2char.txt 파일에 저장
-with open('jikji_2char.txt', 'w', encoding='utf-8') as result_4char_file:
+with open('jikji_4char.txt', 'w', encoding='utf-8') as result_4char_file:
     result_4char_file.write('\n'.join(unique_nouns_4char))
 
-print("모든 파일에서 중복되지 않는 2글자 이상의 명사는 jikji.txt에 저장되었습니다.")
-print("모든 파일에서 중복되지 않는 4글자 이상의 명사는 jikji_2char.txt에 저장되었습니다.")
+print("모든 파일에서 중복되지 않는 2글자 이상의 명사는 jikji_2char.txt에 저장되었습니다.")
+print("모든 파일에서 중복되지 않는 4글자 이상의 명사는 jikji_4char.txt에 저장되었습니다.")

@@ -18,7 +18,7 @@ hanja_hangul_pattern = re.compile(r'(\w+)\([一-龥]+\)(:)?')
 hanja_only_pattern = re.compile(r'[一-龥]{2,}')
 
 # 챕터 패턴: 간지+일 제X국 형태를 매칭
-chapter_pattern = re.compile(r'[甲乙丙丁戊己庚辛壬癸][子丑寅卯辰巳午未申酉戌亥]日\s第[一二三四五六七八九十百千]+局')
+chapter_pattern = re.compile(r'[甲乙丙丁戊己庚辛壬癸][子丑寅卯辰巳午未申酉戌亥]日\s第[一二三四五六七八九十百千]+局')
 
 # 각 파일을 읽고 단어들을 추출하여 딕셔너리에 추가
 all_chapters = set()  # 모든 챕터를 저장
