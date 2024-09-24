@@ -1,0 +1,18 @@
+ 2001  pip install --upgrade pymilvus transformers datasets torch
+ 2002  pip install --upgrade openai pymilvus
+ 2003  pip install llama-agents pymilvus openai python-dotenv
+ 2004  pip install llama-index-vector-stores-milvus llama-index-readers-file llama-index-llms-ollama llama-index-llms-mistralai llama-index-embeddings-mistralai
+ 2005  pip install -qU  langchain_milvus
+ 2006  pip install --upgrade langchain langchain-core langchain-community langchain-text-splitters langchain-milvus langchain-openai bs4
+ 2007  ip install llama-index-vector-stores-milvus
+ 2008  pip install llama-index-vector-stores-milvus
+ 2009  pip install llama-index
+ 2010  pip install pymilvus
+ 2011  pip install --upgrade pymilvus transformers datasets torch
+ 2012  pip install pymilvus torch gdown torchvision tqdm
+ 2013  pip install pymilvus sentence-transformers gdown
+ 2014  pip install pymilvus cohere pandas numpy tqdm
+ 2015  pip install -U pymilvus
+ 2016  h
+ 2017  history
+ 2018  history >& a.txt
