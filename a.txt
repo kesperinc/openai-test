@@ -13,6 +13,5 @@
  2013  pip install pymilvus sentence-transformers gdown
  2014  pip install pymilvus cohere pandas numpy tqdm
  2015  pip install -U pymilvus
- 2016  h
  2017  history
  2018  history >& a.txt
