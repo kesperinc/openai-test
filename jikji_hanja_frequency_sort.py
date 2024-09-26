@@ -41,7 +41,7 @@ for file_name in file_list:
             # 한자만 있는 경우를 추출하여 저장
             matches_hanja_only = hanja_only_pattern.findall(line)
             for match in matches_hanja_only:
-                if len(match) >= 2:  # 두 글자 이상인 경우만 저장
+                if len(match) >= 1:  # 두 글자 이상인 경우만 저장
                     if match not in hanja_info:
                         hanja_info[match] = set()  # 챕터별로 저장하기 위해 set 사용
                     hanja_info[match].add(current_chapter)
