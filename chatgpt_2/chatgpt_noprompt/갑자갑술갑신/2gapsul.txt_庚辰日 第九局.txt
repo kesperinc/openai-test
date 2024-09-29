@@ -1,0 +1,21 @@
+The nouns in the provided Korean text are: 
+
+- 庚辰日 
+- 第九局
+- 課體
+- 元首
+- 윤하
+- 불비
+- 려덕
+- 폐구
+- 課意
+- 과전(課傳) 
+- 순환
+- 탈공(脫空)
+- 관(關)
+- 마음
+- 기대
+- 양귀(兩貴)
+- 되돌리기
+
+Please note that extracting nouns from a language like Korean can be a bit tricky due to its complex grammar and many compound words. It's best to read the text in context to understand what is a noun and what isn't.

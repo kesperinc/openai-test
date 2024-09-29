@@ -1,5 +1,5 @@
 import re
-from konlpy.tag import Mecab, Okt, Komoran
+from konlpy.tag import Mecab, Okt, Komoran, Kkma
 from collections import defaultdict
 from jamo import h2j, j2hcj
 import os
@@ -8,6 +8,7 @@ import os
 mecab = Mecab()
 okt = Okt()
 komoran = Komoran()
+kkma = Kkma()
 
 # 처리할 파일들의 리스트를 가져옴
 file_list = ['1gapja.txt', '2gapsul.txt', '3gapsin.txt', '4gapo.txt', '5gapjin.txt', '6gapin.txt']
@@ -28,7 +29,7 @@ hanja_hangul_pattern = re.compile(r'(\w+)\([一-龥]+\)')
 hanja_only_pattern = re.compile(r'[一-龥]{2,}')  # 한자만 두 글자 이상 있는 경우 매칭
 
 # 챕터 패턴: 간지+일 제X국 형태를 매칭
-chapter_pattern = re.compile(r'([甲乙丙丁戊己庚辛壬癸][子丑寅卯辰巳午未申酉戌亥]日)\s*第[一二三四五六七八九十百千]+局')
+chapter_pattern = re.compile(r'([甲乙丙丁戊己庚辛壬癸][子丑寅卯辰巳午未申酉戌亥]日)\s*第[一二三四五六七八九十百千]+局')
 
 # 제외할 7글자 이상의 한자 목록 (제공된 텍스트 내용)
 exclude_list = {
@@ -125,6 +126,7 @@ def pronunciation_key(word):
 mecab_user_dict = []
 okt_user_dict = []
 komoran_user_dict = []
+kkma_user_dict = []
 
 def check_word_in_mecab(word):
     """Mecab 사전에 단어가 있는지 확인"""
@@ -140,6 +142,11 @@ def check_word_in_komoran(word):
     tokens = komoran.pos(word)
     return len(tokens) == 1 and tokens[0][0] == word
 
+def check_word_in_kkma(word):
+    """Komoran 사전에 단어가 있는지 확인"""
+    tokens = kkma.pos(word)
+    return len(tokens) == 1 and tokens[0][0] == word
+
 # 단어를 사용자 사전으로 추가할지 여부를 체크
 def add_to_user_dict(word):
     if not check_word_in_mecab(word):
@@ -148,6 +155,8 @@ def add_to_user_dict(word):
         okt_user_dict.append(word)
     if not check_word_in_komoran(word):
         komoran_user_dict.append(word)
+    if not check_word_in_kkma(word):
+        kkma_user_dict.append(word)
 
 # 모든 명사들에 대해 사전 존재 여부 확인
 for word in unique_nouns_2char:
@@ -177,6 +186,11 @@ with open('dict/komoran_user_dict.txt', 'w', encoding='utf-8') as komoran_file:
     for word in komoran_user_dict:
         komoran_file.write(f"{word}\tNNP\n")
 
+# Kkma 사용자 사전 저장
+with open('dict/kkma_user_dict.txt', 'w', encoding='utf-8') as kkma_file:
+    for word in kkma_user_dict:
+        kkma_file.write(f"{word}\tNNP\n")
+
 # 파일에 단어 저장
 def save_to_file(filename, data):
     with open(filename, 'w', encoding='utf-8') as file:
@@ -204,6 +218,7 @@ save_to_file('jikji_7char_hanja.txt', sorted_hanja_7char)
 print(f"Mecab 사용자 사전에 저장된 단어 수: {len(mecab_user_dict)}")
 print(f"Okt 사용자 사전에 저장된 단어 수: {len(okt_user_dict)}")
 print(f"Komoran 사용자 사전에 저장된 단어 수: {len(komoran_user_dict)}")
+print(f"Kkma 사용자 사전에 저장된 단어 수: {len(kkma_user_dict)}")
 
 print("모든 파일에서 중복되지 않는 2글자 이하의 명사는 jikji_2char.txt에 저장되었습니다.")
 print("모든 파일에서 중복되지 않는 3글자 이상 4글자 이하의 명사는 jikji_4char.txt에 저장되었습니다.")

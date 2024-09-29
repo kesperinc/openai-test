@@ -1,0 +1,19 @@
+There are several nouns in the provided Korean text
+but they are using Hanja (old Korean writing system which uses Chinese characters). Understanding the full meaning or extracting individual nouns requires knowledge of Hanja and Korean language.
+
+However
+few of the nouns from the extracted text are: 
+1. 날씨 (Weather)
+2. 태산 (Mountain)
+3. 혼인 (Marriage)
+4. 질병 (Disease)
+5. 출행 (Departure)
+6. 행인 (Pedestrian)
+7. 출병 (Mobilization)
+8. 일 (Work)
+9. 사람 (Person)
+10. 주인 (Owner)
+
+Please note
+since the text provided has a very particular context and is written in an old-fashioned and formal style
+some terms may be lose their meaning when taken out of context.

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Processing</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Processing Dashboard</h1>
+        <div class="button-container">
+            <button id="preprocessButton">텍스트 전처리</button>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        document.getElementById('preprocessButton').addEventListener('click', async function () {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '전처리 중...';
+
+            try {
+                const response = await fetch('/api/v1/preprocess', {
+                    method: 'POST'
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    resultDiv.innerHTML = data.message;
+                } else {
+                    const errorData = await response.json();
+                    resultDiv.innerHTML = `오류: ${errorData.message}`;
+                }
+            } catch (error) {
+                resultDiv.innerHTML = `오류: ${error.message}`;
+            }
+        });
+    </script>
+</body>
+</html>

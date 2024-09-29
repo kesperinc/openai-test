@@ -26,7 +26,7 @@ hanja_hangul_pattern = re.compile(r'(\w+)\([一-龥]+\)')
 hanja_only_pattern = re.compile(r'[一-龥]{2,}')  # 한자만 두 글자 이상 있는 경우 매칭
 
 # 챕터 패턴: 간지+일 제X국 형태를 매칭
-chapter_pattern = re.compile(r'([甲乙丙丁戊己庚辛壬癸][子丑寅卯辰巳午未申酉戌亥]日)\s*第[一二三四五六七八九十百千]+局')
+chapter_pattern = re.compile(r'([甲乙丙丁戊己庚辛壬癸][子丑寅卯辰巳午未申酉戌亥]日)\s*第[一二三四五六七八九十百千]+局')
 
 # 제외할 7글자 이상의 한자 목록 (제공된 텍스트 내용)
 exclude_list = {

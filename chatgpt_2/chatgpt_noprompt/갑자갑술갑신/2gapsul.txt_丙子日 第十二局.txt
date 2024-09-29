@@ -1,0 +1,52 @@
+The nouns from the text are:
+
+(1) 丙子日
+(2) 第十二局
+(3) 課體
+(4) 知一
+(5) 진여
+(6) 맥월
+(7) 課意
+(8) 支干
+(9) 공
+(10) 무리
+(11) 허위
+(12) 록
+(13) 밤
+(14) 귀인
+(15) 공망
+(16) 낮
+(17) 옥
+(18) 解曰
+(19) 干上
+(20) 午
+(21) 승
+(22) 支上
+(23) 丑
+(24) 내
+(25) 삼전
+(26) 寅卯辰
+(27) 그
+(28) 중
+(29) 허위
+(30) 巳
+(31) 일록
+(32) 부족
+(33) 상
+(34) 酉
+(35) 밤
+(36) 貴
+(37) 申
+(38) 낙공
+(39) 亥
+(40) 日
+(41) 귀인
+(42) 戌
+(43) 임
+(44) 입옥
+(45) 양
+(46) 귀인
+(47) 힘,
+(And so on. Note that nouns extraction in large text
+especially in languages like Korean and Chinese
+should be done by an appropriate parsing tool to ensure maximum precision.)

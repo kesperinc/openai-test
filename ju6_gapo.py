@@ -4,7 +4,7 @@ import re
 file_name = '4gapo.txt'
 
 # 챕터 패턴: 간지+일 제X국 형태를 매칭
-chapter_pattern = re.compile(r'[甲乙丙丁戊己庚辛壬癸][子丑寅卯辰巳午未申酉戌亥]日\s*第[一二三四五六七八九十百千]+局')
+chapter_pattern = re.compile(r'[甲乙丙丁戊己庚辛壬癸][子丑寅卯辰巳午未申酉戌亥]日\s*第[一二三四五六七八九十百千]+局')
 
 # 특정 챕터 (정유일 제6국) 설정
 specific_chapter = "丁酉日 第六局"
